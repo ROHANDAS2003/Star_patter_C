@@ -33,6 +33,36 @@ void HollowSquare()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Hollow Square ========\n\n");
 
+    int side;
+    printf("Enter the lenght of sides:  ");
+    scanf("%d", &side);
+
+    int space = side - 2;
+
+    printf("\n");
+
+    for (int i = 0; i < side; i++)
+    {
+        if (i == 0 || i == (side-1))
+        {
+            for (int j = 0; j < side; j++)
+            {
+                printf("* ");
+            }
+        }
+        else
+        {
+            printf("* ");
+            for (int k = 0; k < space; k++)
+            {
+                printf("  ");
+            }
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

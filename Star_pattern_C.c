@@ -112,6 +112,27 @@ void UpsideDownPyramid()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Upside Down Pyramid ========\n\n");
 
+     int base;
+    printf("Enter the lenght of base:  ");
+    scanf("%d", &base);
+
+    printf("\n");
+
+    for (int i = base; i > 0; i--)
+    {
+        for (int j = 0; j < (base - i); j++)
+        {
+            printf(" ");
+        }
+
+        for (int k = 0; k < i; k++)
+        {
+            printf("* ");
+        }
+        
+        printf("\n");
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

@@ -3,120 +3,151 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-void SolidSquare(){
-    system("CLS");                                        // clearing screen
+void SolidSquare()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Solid Square ========\n\n");
+
+    int side;
+    printf("Enter the lenght of sides:  ");
+    scanf("%d", &side);
+
+    printf("\n");
+
+    for (int i = 0; i < side; i++)
+    {
+        for (int j = 0; j < side; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void HollowSquare(){
-    system("CLS");                                        // clearing screen
+void HollowSquare()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Hollow Square ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void Diamond(){
-    system("CLS");                                        // clearing screen
+void Diamond()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Diamond ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void Pyramid(){
-    system("CLS");                                        // clearing screen
+void Pyramid()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Pyramid ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void UpsideDownPyramid(){
-    system("CLS");                                        // clearing screen
+void UpsideDownPyramid()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Upside Down Pyramid ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void RightPointingTriangle(){
-    system("CLS");                                        // clearing screen
+void RightPointingTriangle()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Right Pointing Triangle ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void LeftPointingTriangle(){
-    system("CLS");                                        // clearing screen
+void LeftPointingTriangle()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Left Pointing Triangle ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void BowTie(){
-    system("CLS");                                        // clearing screen
+void BowTie()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Bow Tie ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void Frame(){
-    system("CLS");                                        // clearing screen
+void Frame()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Frame ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void Butterfly(){
-    system("CLS");                                        // clearing screen
+void Butterfly()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Butterfly ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void AdditionSign(){
-    system("CLS");                                        // clearing screen
+void AdditionSign()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Addition Sign ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void CrossSign(){
-    system("CLS");                                        // clearing screen
+void CrossSign()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Cross Sign ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void SolidCircle(){
-    system("CLS");                                        // clearing screen
+void SolidCircle()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Solid Circle ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void HollowCircle(){
-    system("CLS");                                        // clearing screen
+void HollowCircle()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Hollow Circle ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
 
-void Heart(){
-    system("CLS");                                        // clearing screen
+void Heart()
+{
+    system("CLS"); // clearing screen
     printf("\n\n\t======== Heart ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input

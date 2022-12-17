@@ -218,6 +218,51 @@ void LeftPointingTriangle()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Left Pointing Triangle ========\n\n");
 
+    int length;
+    printf("Enter the lenght of the triangle:  ");
+    scanf("%d", &length);
+
+    int row = length + (length - 1);
+    int m = length - 1;
+
+    printf("\n");
+
+    for (int i = 1; i <= row ; i++)
+    {
+        if (i <= length)
+        {
+            for (int j = 0; j < (length - i); j++)
+            {
+                printf(" ");
+            }
+        }
+        else
+        {
+            for (int j = 0; j < (i - length); j++)
+            {
+                printf(" ");
+            }
+            
+        }
+
+        if (i <= length)
+        {
+            for (int k = 0; k < i; k++)
+            {
+                printf("*");
+            }  
+        }
+        else
+        {
+            for (int l = 1; l <= m; l++)
+            {
+                printf("*");
+            }
+            m--;
+        }
+        printf("\n");
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

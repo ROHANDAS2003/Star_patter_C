@@ -179,6 +179,36 @@ void RightPointingTriangle()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Right Pointing Triangle ========\n\n");
 
+    int length;
+    printf("Enter the lenght of the triangle:  ");
+    scanf("%d", &length);
+
+    int row = length + (length - 1);
+    int l = length - 1;
+
+    printf("\n");
+
+    for (int i = 1; i <= row ; i++)
+    {      
+        if (i <= length)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                printf("*");
+            }
+        }
+        else
+        {
+            for (int k = 1; k <= l; k++)
+            {
+                printf("*");
+            }
+            l--;
+        }
+        printf("\n");
+    }
+    
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

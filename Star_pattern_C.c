@@ -72,6 +72,43 @@ void Diamond()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Diamond ========\n\n");
 
+    int height;
+
+    printf("Enter the length of sides of the diamond:  ");
+    scanf("%d", &height);
+
+    printf("\n");
+
+    for (int i = 1; i <= height; i++)
+    {
+        for (int j = 0; j < (height - i); j++)
+        {
+            printf(" ");
+        }
+
+        for (int k = 0; k < i; k++)
+        {
+            printf("* ");
+        }
+        
+        printf("\n");
+    }
+
+    for (int i = height; i > 0; i--)
+    {
+        for (int j = 0; j < (height - i); j++)
+        {
+            printf(" ");
+        }
+
+        for (int k = 0; k < i; k++)
+        {
+            printf("* ");
+        }
+        
+        printf("\n");
+    }   
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

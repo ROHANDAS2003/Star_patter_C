@@ -335,6 +335,46 @@ void Heart()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Heart ========\n\n");
 
+    int height,i,j;
+    printf("Enter the height of the heart:  ");
+    scanf("%d", &height);
+
+    printf("\n");
+
+    for (i = height/2; i <= height; i+=2)
+    {
+        for (j = i; j < height-1; j+=2)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        for (j = i; j <= height-1; j++)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for (i = height; i >= 1; i--)
+    {
+        for (j = i; j < height; j++)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= (i*2)-1; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

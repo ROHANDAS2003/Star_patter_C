@@ -281,6 +281,46 @@ void Frame()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Frame ========\n\n");
 
+    int size, i, j;
+    printf("Enter the size:  ");
+    scanf("%d", &size);
+
+    printf("\n");
+
+    for ( i = 1; i <= size; i++)
+    {
+        for ( j = i; j <= size; j++)
+        {
+            printf("*");
+        }
+        for ( j = 1; j <= (2*i-2); j++)
+        {
+            printf(" ");
+        }
+        for ( j = i; j <= size; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for ( i = 1; i <= size; i++)
+    {
+        for ( j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        for ( j = (2*i-2); j < (2*size-2); j++)
+        {
+            printf(" ");
+        }
+        for ( j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

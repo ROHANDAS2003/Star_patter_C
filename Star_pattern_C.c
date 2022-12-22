@@ -272,6 +272,50 @@ void BowTie()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Bow Tie ========\n\n");
 
+    int size;
+    printf("Enter the length of bow tie:  ");
+    scanf("%d", &size);
+
+    size = size/2;
+    int spaces = 2 * size - 2;
+
+    for (int i = 1; i <= size; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
+        for (int j = 0; j < spaces; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        spaces -=2;
+    }
+    spaces = 0;
+
+    for (int i = size; i > 0; i--)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
+        for (int j = 0; j < spaces; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        spaces +=2;
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }

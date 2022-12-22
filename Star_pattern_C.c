@@ -369,20 +369,32 @@ void Frame()
     getch();
 }
 
-void Butterfly()
-{
-    system("CLS"); // clearing screen
-    printf("\n\n\t======== Butterfly ========\n\n");
-
-    printf("\n\n Press an key to close this window:"); // freezing screen till next input
-    getch();
-}
-
 void AdditionSign()
 {
     system("CLS"); // clearing screen
     printf("\n\n\t======== Addition Sign ========\n\n");
 
+    int length;
+    printf("Enter the length of the addition sign:  ");
+    scanf("%d", &length);
+
+    printf("\n");
+
+    for (int i = 1; i <= 2*length-1; i++)
+    {
+        for (int j = 1; j <= 2*length-1; j++)
+        {
+            if (i == length || j == length*2-1)
+            {
+                printf("* ");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
@@ -392,6 +404,8 @@ void CrossSign()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Cross Sign ========\n\n");
 
+
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
@@ -400,15 +414,6 @@ void SolidCircle()
 {
     system("CLS"); // clearing screen
     printf("\n\n\t======== Solid Circle ========\n\n");
-
-    printf("\n\n Press an key to close this window:"); // freezing screen till next input
-    getch();
-}
-
-void HollowCircle()
-{
-    system("CLS"); // clearing screen
-    printf("\n\n\t======== Hollow Circle ========\n\n");
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
@@ -472,7 +477,7 @@ int main()
     {
         system("CLS");
         printf("\n\n\t======== Welcome to Star patterns ========\n");
-        printf("\n choose which star pattern to print.\n 1. Solid square \n 2. Hollow square \n 3. Diamond \n 4. Pyramid \n 5. Upside-down pyramid \n 6. Right pointing triangle \n 7. Left pointing triangle \n 8. Bow tie \n 9. Frame \n 10. Butterfly \n 11. Addition sign \n 12. Cross sign \n 13. Solid circle \n 14. Hollow Circle \n 15. Heart \n 16. Exit \n choose your opinion:  ");
+        printf("\n choose which star pattern to print.\n 1. Solid square \n 2. Hollow square \n 3. Diamond \n 4. Pyramid \n 5. Upside-down pyramid \n 6. Right pointing triangle \n 7. Left pointing triangle \n 8. Bow tie \n 9. Frame \n 10. Addition sign \n 11. Cross sign \n 12. Solid circle \n 13. Heart \n 14. Exit \n choose your opinion:  ");
         scanf("%d", &opt);
 
         switch (opt)
@@ -514,30 +519,22 @@ int main()
             break;
 
         case 10:
-            Butterfly();
-            break;
-
-        case 11:
             AdditionSign();
             break;
 
-        case 12:
+        case 11:
             CrossSign();
             break;
 
-        case 13:
+        case 12:
             SolidCircle();
             break;
 
-        case 14:
-            HollowCircle();
-            break;
-
-        case 15:
+        case 13:
             Heart();
             break;
 
-        case 16:
+        case 14:
             Run = false;
             break;
 

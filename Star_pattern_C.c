@@ -404,7 +404,28 @@ void CrossSign()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Cross Sign ========\n\n");
 
+    int n,m;
+    printf("Enter the size of cross:  ");
+    scanf("%d", &n);
 
+    m = 2*n-1;
+    printf("\n");
+
+    for (int i = 1; i <= m; i++)
+    {
+        for (int j = 1; j <= m; j++)
+        {
+            if (i == j || j == (m-i+1))
+            {
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
 
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();

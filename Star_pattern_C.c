@@ -436,6 +436,23 @@ void SolidCircle()
     system("CLS"); // clearing screen
     printf("\n\n\t======== Solid Circle ========\n\n");
 
+    int r, x, y;
+    printf("Enter radius:");
+    scanf("%d",&r);
+
+    for(x=-r;x<=r;x++)
+    {  
+        printf("\t\t\t");
+        for(y=-r;y<=r;y++)
+        {
+            if(x * x + y * y - r * r < 10)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+
     printf("\n\n Press an key to close this window:"); // freezing screen till next input
     getch();
 }
